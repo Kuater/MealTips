@@ -95,6 +95,7 @@ header {
 .botBox {
     width: 100%;
     display: flex;
+    height: auto;
     justify-content: space-between;
     justify-content: space-around;
     padding: .3125rem;
@@ -147,10 +148,7 @@ body {
     width: 100%;
 }
 
-.core {
-    margin: 2rem;
-    width: 100%;
-}
+
 
 .core .upLine {
     margin-top: 2rem;
@@ -191,7 +189,8 @@ Bouton section du bas
     height: 9.375rem;
 }
 
-.core .lowLine button {
+.tarifs button, 
+.lowLine button {
     background: #428A60;
     border-radius: 0.625rem;
     border-color: 15 solid black;
@@ -199,13 +198,9 @@ Bouton section du bas
     height: 3.125rem;
 }
 
-@media screen and (min-width: 320px) and (max-width: 390px) {
-    body {
-      background-color:white;
-    }
-  }
 
-@media screen and (min-width: 391px) and (max-width:1981px) {
+
+@media screen and (min-width: 700px) and (max-width:3200px) {
     
     header {
         font-family: "Fredoka One", sans-serif;
@@ -228,6 +223,7 @@ Bouton section du bas
         display: flex;
         justify-content: center;
         justify-content: space-around;
+        justify-content: space-between;
     }
 
     .topBox .topBtn1 {
@@ -239,7 +235,7 @@ Bouton section du bas
     */
 
     body {
-        background-color: #7e7e1f;
+        background-color: #fffff1;
         font-family: "Fredoka One", sans-serif;
         align-items: center;
         justify-content: center;
@@ -250,11 +246,15 @@ Bouton section du bas
     .mainContainer {
         width: 100%;
         margin: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .core {
         width: 100%;
         margin: 2rem;
+
     }
 
     .core .upLine {
@@ -310,12 +310,12 @@ Bouton section du bas
         font-size: x-large;
     }
 
-    .core .lowLine .tarifs button {
+    .tarifs button {
         background: #428A60;
         border-color: 15 solid black;
         border-radius: 50%;
-        width: 15rem;
-        height: 15rem;
+        width: 20rem;
+        height: 20rem;
         margin: 1rem;
         font-size: x-large;
     }
