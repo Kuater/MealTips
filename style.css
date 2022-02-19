@@ -46,58 +46,138 @@ table {
  Mon Css
 */
 
-.containerHeader {
-    margin-top: 30px;
+@font-face{
+    font-family:"Fredoka One";
+    src: url ("Fonts/Fredoka_One/FredokaOne-Regular.woff2");
+}
+
+@font-face{
+    font-family:"Lexend";
+    src: url ("Fonts/Lexend/Lexend-Regular.woff2");
+}
+
+@font-face{
+    font-family:"Lexend";
+    src: url ("Fonts/Lexend/Lexend-SemiBold.woff2");
+}
+
+/*
+Header
+*/
+
+header {
+    font-family: "Fredoka One", sans-serif;
+    margin-top: 1.875rem;
+    gap: .625rem;
+    align-items: center;
+}
+
+.topHeadBox {
+    margin : 2rem ;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topBox {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     justify-content: space-around;
 }
 
-.txt-pro-presentation {
+.topBox .topBtn1 {
+    background: #fffff1;
+    border: none;
+    width: 1.5rem;
+}
+
+.botBox {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    justify-content: space-around;
+    padding: .3125rem;
+    margin-top: 2rem;
+}
+
+.botBoxBtn {
+    display: flex;
+    align-items: center;
+    margin-right: .625rem;
+}
+
+.proPresentation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 /*
-font-family : "montserrat", sans-serif;
+Boutons section du haut 
+*/
+
+.botBoxBtn .topBtn2 {
+    background: #fffff1;
+    border: none;
+    width: 1.5rem;
+}
+
+.botBoxBtn .topBtn3 {
+    background: #428A60;
+    border-radius: 1.875rem;
+    margin-left: 25px;
+}
+
+/*
+body
 */
 
 body {
-    background-color: white;
+    background-color: #fffff1;
+    font-family: "Fredoka One", sans-serif;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .mainContainer {
-    margin: 1.5625rem;
+    margin: 2rem;
+    width: 100%;
 }
 
-.mainContent {
+.core {
+    margin: 2rem;
+    width: 100%;
+}
+
+.core .upLine {
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
-    height: 6,25rem;
+    gap: 1rem;
 }
 
-button .topBtn1{
-    color: white;
+.core .midLine {
+    margin-top: 1.25rem;
+    width: 100%;
 }
 
-.topLeftBox .topBtn1 {
-    background: white;
-    width: 1.5rem;
-    border-radius: 0;
+.core .lowLine {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
 }
 
-.proPresentation .topBtn2 {
-    background: #428A60;
-    border-radius: 1.875rem;
-}
-
-.proPresentation .topBtn3 {
-    background: #428A60;
-    border-radius: 1.875rem;
-}
+/*
+Bouton section du bas
+*/
 
 .core .upLine button {
     background: #428A60;
+    border: 0.1rem solid black;
     border-radius: 0.625rem;
     width: 8.75rem;
     height: 15.625rem;
@@ -119,42 +199,125 @@ button .topBtn1{
     height: 3.125rem;
 }
 
-.core {
-    margin: 1.25rem;
-    width: 100%;
-}
-
-.upLine {
-    margin-left: 0rem;
-    margin-top: 5rem;
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-}
-
-.midLine {
-    margin-top: 1.25rem;
-    margin-left: 0rem;
-    width: 100%;
-}
-
-.lowLine {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 2rem;
-    margin-left: 0px;
-    width: 100%;
-}
-
 @media screen and (min-width: 320px) and (max-width: 390px) {
     body {
       background-color:white;
     }
   }
 
-@media screen and (min-width: 391px) and (max-width:1980px) {
-    body {
-      background-color:red;
+@media screen and (min-width: 391px) and (max-width:1981px) {
+    
+    header {
+        font-family: "Fredoka One", sans-serif;
+        margin-top: 0.5rem;
+        gap: .625rem;
+        align-items: center;
+        display: flex;
     }
+    
+    .topHeadBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .topBox {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .topBox .topBtn1 {
+        display: none;
+    }
+
+    /*
+    body
+    */
+
+    body {
+        background-color: #7e7e1f;
+        font-family: "Fredoka One", sans-serif;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .mainContainer {
+        width: 100%;
+        margin: 2rem;
+    }
+    
+    .core {
+        width: 100%;
+        margin: 2rem;
+    }
+
+    .core .upLine {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        gap: 7.5rem;
+    }
+
+    .core .midLine {
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .core .lowLine {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    /*
+    btn
+    */
+
+    .core .upLine button {
+        background: #428A60;
+        border: 0.1rem solid black;
+        border-radius: 1rem;
+        width: 32.5rem;
+        height: 12.5rem;
+        margin: 1rem;
+        font-size: x-large;
+    }
+
+    .core .midLine button {
+        background: #428A60;
+        border-radius: 1rem;
+        width: 75rem;
+        height: 12.5rem;
+        margin: 1rem;
+        font-size: x-large;
+    }
+
+    .core .lowLine button {
+        background: #428A60;
+        border-radius: 1rem;
+        border-color: 15 solid black;
+        width: 75rem;
+        height: 5rem;
+        margin: 1rem;
+        font-size: x-large;
+    }
+
+    .core .lowLine .tarifs button {
+        background: #428A60;
+        border-color: 15 solid black;
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+        margin: 1rem;
+        font-size: x-large;
+    }
+
   }

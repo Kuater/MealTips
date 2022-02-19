@@ -1,62 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <title>MealTips</title>
-</head>
-<header>
-    <div class="containerHeader">
-        <div class="topLeftBox">
+  </head>
+  <header>
+    <div class="topHeadBox">
+      <div class="topBox">
         <!-- btn precedent -->
-            <button class= "topBtn1" type="button">
-                <div class="svgPrecedent">
-                    <img src="Vector.svg" alt="svgPrecedent">
-                </div>
+        <button class="topBtn1" type="button">
+          <div class="svgPrecedent">
+            <img src="Vector.svg" alt="svgPrecedent" />
+          </div>
+        </button>
+        <p>
+          Qualité du profil
+          <progress class="avancement" value="70" max="100"></progress>
+        </p>
+      </div>
+      <!-- barre de chargement profil -->
+      <div class="botBox">
+        <div class="imgPro">
+          <img src="Ellipse 8.svg" alt="image_professionnel" />
+        </div>
+        <div class="proPresentation">
+          <h3>First name</h3>
+          <h4>Name</h4>
+          <p>Profession</p>
+          <address>94430 Chennevieres</address>
+        </div>
+        <div class="botBoxBtn">
+            <!-- btn geolocaliser -->
+            <button class="topBtn2" type="button">
+                <img src="loc.svg" alt="btn_loc" />
             </button>
+            <!-- btn edit -->
+            <button class="topBtn3" type="button">...</button>  
         </div>
-        <!-- barre de chargement profil -->
-        <div class="topRightBox">
-            <p>Qualité du profil
-                <progress class="avancement" value="70" max="100"></progress>
-            </div>
-     </p>
+      </div>
     </div>
-</header>
-<body>
+  </header>
+  <body>
     <div class="mainContainer">
-        <div class="mainContent">
-            <div class="img_presentation">
-                <img src="Ellipse 8.svg" alt="image_professionnel">
-            </div>
-            <div class="proPresentation">
-                <h3>First name</h3>
-                <h4>Name</h4>
-                <p>Profession</p>
-                <address>94100 Saint-Maur des fossés</address>
-                <!-- btn geolocaliser -->
-                <button class="topBtn2" type="button">Loc</button>
-                <!-- btn edit -->
-                <button class ="topBtn3"type="button">...</button>
-            </div>
+      <div class="core">
+        <div class="upLine">
+          <button type="button">Mes prochains RDV</button>
+          <button type="button">Mes conseils</button>
         </div>
-        <div class="core">
-            <div class="upLine">
-                <button type="button">Mes prochains RDV</button>
-                <button type="button">Mes conseils</button>
-            </div>
-            <div class="midLine">
-                <button type="button">Mes patients</button>
-            </div>
-            <div class="lowLine">
-                <button type="button">Tarifs Remboursement</button>
-                <button type="button">Mon formulaire</button>
-            </div>
+        <div class="midLine">
+          <button type="button">Mes patients</button>
         </div>
+        <div class="lowLine">
+            <div class="tarifs"> 
+          <button type="button">Tarifs Remboursement</button>
+            </div>
+          <button type="button">Mon formulaire</button>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
