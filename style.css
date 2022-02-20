@@ -67,6 +67,7 @@ Header
 
 header {
     font-family: "Fredoka One", sans-serif;
+    font-size: larger;
     margin-top: 1.875rem;
     gap: .625rem;
     align-items: center;
@@ -144,7 +145,7 @@ body {
 }
 
 .mainContainer {
-    margin: 2rem;
+    margin: 3rem;
     width: 100%;
 }
 
@@ -196,6 +197,7 @@ Bouton section du bas
     border-color: 15 solid black;
     width: 18.75rem;
     height: 3.125rem;
+    margin-top: 2rem;
 }
 
 
@@ -219,15 +221,27 @@ Bouton section du bas
     
     .topBox {
         width: 100%;
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        justify-content: space-between;
+        font-size: x-large;
+        align-items: center;
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right:  2rem;
+    }
+
+    .botBox {
+        font-size: x-large;
     }
 
     .topBox .topBtn1 {
         display: none;
+    }
+
+    /*
+    */
+    .botBox .topBtn2 ,
+    .botBox .topBtn3  {
+        width: 4rem;
+        height: 2rem;
     }
 
     /*
@@ -245,7 +259,7 @@ Bouton section du bas
     
     .mainContainer {
         width: 100%;
-        margin: 2rem;
+        margin: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -258,7 +272,7 @@ Bouton section du bas
     }
 
     .core .upLine {
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
         display: flex;
         gap: 7.5rem;
@@ -271,7 +285,6 @@ Bouton section du bas
 
     .core .lowLine {
         display: flex;
-        flex-direction: row-reverse;
         gap: 1rem;
         margin-top: 2rem;
         width: 100%;
