@@ -46,19 +46,19 @@ table {
  Mon Css
 */
 
-@font-face{
+@font-face {
     font-family:"Fredoka One";
-    src: url ("Fonts/Fredoka_One/FredokaOne-Regular.woff2");
+    src: url("Fonts/Fredoka_One/FredokaOne-Regular.woff2");
 }
 
 @font-face{
     font-family:"Lexend";
-    src: url ("Fonts/Lexend/Lexend-Regular.woff2");
+    src: url("Fonts/Lexend/Lexend-Regular.woff2");
 }
 
 @font-face{
     font-family:"Lexend";
-    src: url ("Fonts/Lexend/Lexend-SemiBold.woff2");
+    src: url("Fonts/Lexend/Lexend-SemiBold.woff2");
 }
 
 /*
@@ -194,7 +194,7 @@ Bouton section du bas
 .lowLine button {
     background: #428A60;
     border-radius: 0.625rem;
-    border-color: 15 solid black;
+    border-color: .625rem solid black;
     width: 18.75rem;
     height: 3.125rem;
     margin-top: 2rem;
@@ -316,7 +316,7 @@ Bouton section du bas
     .core .lowLine button {
         background: #428A60;
         border-radius: 1rem;
-        border-color: 15 solid black;
+        border-color: .9375rem solid black;
         width: 75rem;
         height: 5rem;
         margin: 1rem;
@@ -325,7 +325,7 @@ Bouton section du bas
 
     .tarifs button {
         background: #428A60;
-        border-color: 15 solid black;
+        border-color: .9375rem solid black;
         border-radius: 50%;
         width: 20rem;
         height: 20rem;
